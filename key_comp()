@@ -15,7 +15,11 @@ a.insert(i+10);}
 set<int>::iterator it;
 it=a.begin();
 set<int>::key_compare c=a.key_comp();
-if(c())
+
+/*THE DEFAULT BEHAVIOUR OF key_comp() IS < SO THE TWO ITERATORS PASSED SHOULD BE COMPARED WITH LOGIC VALUE AT LEFT SIDE ITERATOR<VALUE AT 
+RIGHT SIDE OPERATOR*/
+if(c(a.end(),*(++it))){
+        cout<<*it<<' ';}
 
 
 return 0;}
