@@ -1,0 +1,20 @@
+
+/*INSERT ELEMENTS IN DESCENDING ORDER IN A SET*/
+
+
+#include<iostream>
+#include<set>
+using namespace std;
+int main(){
+set<int, greater<int>>	a;                                  /*  descending order*/
+for(int i=0;i<10;i++){
+			a.insert(i+10);
+
+}
+set<>
+for(auto i=a.begin();i!=a.end();i++){
+//			a.insert(i+10);
+//cout<<a[i]<<' ';                             /*probably doesn't have a [] operator*/
+cout<<*i<<' ';
+}
+return 0;}
