@@ -1,0 +1,21 @@
+/*begin(),end()  RETURN TYPE: ITERATOR
+size(),max_size()  RETURN TYPE: NO OF ELEMENTS INT
+empty() RETURN TYPE: bool
+*/
+
+
+/*RETURN TRUE/FALSE*/
+#include<iostream>
+#include<set>
+using namespace std;
+int main(){
+set<int >a;
+for(auto i=0;i<10;i++){
+a.insert(i+10);}
+set<int>::iterator it;
+it=a.begin();
+set<int>::key_compare c=a.key_comp();
+if(c())
+
+
+return 0;}
